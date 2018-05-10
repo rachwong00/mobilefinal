@@ -1,0 +1,3 @@
+README
+
+This file contains our demo for the CMU Dining mobile app. The Desktop version is not properly designed, so please use this on a mobile sized screen. The first card is entirely clickable and links to the location’s page. The rest of the cards are not, but have working location links. 

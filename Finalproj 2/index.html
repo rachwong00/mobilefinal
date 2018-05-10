@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <style>
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  padding:10px;
+  border-radius: 4px;
+}
+
+.cardlink
+  {
+position: absolute;
+top: 0; left: 0;
+height: 100%; width: 100%;
+z-index:50;
+}
+
+a {
+ z-index:1;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+
+li{
+diplay:inline-block;
+}
+</style>
+	</head>
+
+
+<body>
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light">
+<div class="row" style = "display:inline; vertical-align: baseline;">
+   <a href="https://www.cmu.edu/" class="logo"><img class="img-responsive" src="images/logo.jpg" style="max-width: 80%; max-height: 80px;"></a>
+     <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" style = "float:right; border:none; margin-top: 0px;"> <img class="img-responsive" src="images/icon.png"> </button>
+</div>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home
+          <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Dining Map</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Get Funds </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Nutrition Calculator</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Off Campus Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Filter Locations</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Hours of Operation</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Today's Specials</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Today's Soups</a>
+      </li>
+    </ul>
+
+  </div>
+ </nav>
+</div>
+
+<div class="container-fluid">
+ <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Search for..." style = "margin-bottom: 10px;">
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" style = "background-color: rgb(31, 48, 94); color:white; margin-bottom: 10px;">Go</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div>
+
+<iframe class="embed-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.466623321469!2d-79.94520684934967!3d40.44280807926086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie+Mellon+University!5e0!3m2!1sen!2sus!4v1517996950192" width="250" height="250" frameborder="0" style="padding:20px" allowfullscreen></iframe>
+
+<div class="container-fluid">
+ <div class="row">
+  <div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#00802b;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=103">
+   <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+      <h5 class="card-title">Entropy+</h5>
+      </div>
+  <p> Carnegie Mellon's on-campus convenience store</p>
+  </div>
+    <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/Entropy/@40.4429666,-79.9420756,18z/data=!3m1!4b1!4m5!3m4!1s0x8834f221ddea0d4d:0x958571859cc05b9b!8m2!3d40.4429666!4d-79.9420756">University Center, 1st Floor</a>
+    <br>
+    Today's Hours: 7:30 AM - 3:00 AM
+    </p>
+</div>
+</div>
+
+<div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#00802b;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=113">
+   <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+      <h5 class="card-title">Au Bon Pain</h5>
+        <img class="img-responsive" src="images/flair.png" style="float:right; width:60px ; height: 30px;">
+      </div>
+     <p>Coffee/tea, espresso, soup, sandwiches/salads, grab-n-go, yogurt parfaits, fruit, snacks </p>
+  </div>
+     <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/Au+Bon+Pain/@40.4411345,-79.9727978,13z/data=!4m8!1m2!2m1!1sau+bon+pain!3m4!1s0x0:0x9f245cc0702daf6!8m2!3d40.4440975!4d-79.9421561">University Center, 2nd Floor</a>
+    <br>
+    Today's Hours: 7:00 AM - 2:00 AM
+    </p>
+ </div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#C41E3A;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=113">
+   <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+      <h5 class="card-title">La Prima</h5>
+      <img class="img-responsive" src="images/soup.png" style="float:right; width:29px; height: 27px;">
+      </div>
+     <p class=card-text>Free trade and organic espresso, cappuccino, coffee, pastries, soup, sandwiches</p>
+  </div>
+    <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/Au+Bon+Pain/@40.4411345,-79.9727978,13z/data=!4m8!1m2!2m1!1sau+bon+pain!3m4!1s0x0:0x9f245cc0702daf6!8m2!3d40.4440975!4d-79.9421561">University Center, 2nd Floor</a>
+    <br>
+    Today's Hours: 7:00 AM - 2:00 AM
+    </p>
+</div>
+</div>
+
+<div class="col-sm-6">
+  <div class="card h-100" style="background-color:#ffffff;">
+    <div class="card-header" style="background-color:#00802b;"></div>
+      <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=88">
+      <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+      <h5 class="card-title">Carnegie Mellon Cafe</h5>
+      </div>
+   <p>Hot breakfast all day, smoothies, superfood breakfast bowls, sandwiches, wraps, ice cream...</p>  
+ </div>
+    <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/Carnegie+Mellon+Cafe/@40.4424352,-79.941892,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f21f10e8c3bd:0x826d959378c37f9!8m2!3d40.4424352!4d-79.939698">Resnik Hall</a>
+    <br>    
+    Today's Hours: 7:30 AM - 2:00 AM
+    </p>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#C41E3A;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=84">
+     <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+    <h5 class="card-title">Zebra Lounge</h5>
+    <img class="img-responsive" src="images/special.png" style="float:right; width:30px ; height: 30px;">
+  </div>
+   <br>
+  <p>Free trade organic tea and coffee, sandwiches, soup, pastries</p>
+  </div>
+
+  <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/La+Prima+Espresso+Company/@40.45305,-80.0406065,13z/data=!4m8!1m2!2m1!1sLa+Prima+Espresso+!3m4!1s0x8834f3dce87ea569:0xacd09b02fbe189ae!8m2!3d40.4516019!4d-79.9828215">College of Fine Arts, 1st Floor</a>
+    <br>
+    Today's Hours: 8:00 AM - 5:00 PM
+    </p>
+ </div>
+</div>
+
+<div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#C41E3A;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=129">
+     <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+    <h5 class="card-title">Ramen Bowl</h5>
+    <img class="img-responsive" src="images/special.png" style="float:right; width:30px ; height: 30px;">
+  </div>
+   <br>
+  <p>Authentic ramen bowls with house made broths and your choice of ingredients</p>
+  </div>
+
+    <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/Jared+L.+Cohon+University+Center/@40.4434055,-79.9420112,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f221e409b945:0x16b3417bd3538dfb!8m2!3d40.4434055!4d-79.9420112">University Center, Floor 1</a>
+    <br>
+    Today's Hours: 10:30 AM - 4:00 PM
+    </p>
+ </div>
+</div>
+</div>
+</div>
+
+
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<div class="card h-100" style="background-color:#ffffff;">
+  <div class="card-header" style="background-color:#C41E3A;"></div>
+  <div class="card-body clickable" data-href="https://apps.studentaffairs.cmu.edu/dining/conceptinfo/?page=conceptDetails&conceptId=86">
+     <div class="row" style="display:inline; font-size: 1.2em; font-weight: bold;>
+    <h5 class="card-title">Downtown Deli</h5>
+   <img class="img-responsive" src="images/flair.png" style="float:right; width:60px ; height: 30px;">
+  </div>
+   <br>
+  <p>Deli sandwiches, wraps, side salads, soups, and fruit</p>
+  </div>
+
+    <p>
+    Location: <a class = "location card-link" href="https://www.google.com/maps/place/40.443657,-79.942061/@40.443657,-79.942061,19z">University Center, Floor 2</a>
+    <br>
+    Today's Hours: 10:30 AM - 4:00 PM
+    </p>
+ </div>
+</div>
+</div>
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 8 || document.documentElement.scrollTop > 8) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+$(document).ready(function() {
+
+   $('.clickable').on('click', function(e){
+    console.log($(this).attr('data-href'));
+     // window.location = $(this).attr('data-href');
+
+    var win = window.open($(this).attr('data-href'), '_blank');
+     win.focus();
+
+     
+     console.log(3);
+ });
+
+});
+
+</script>
+
+</body>
+
+</div>
+
+
+</html>
